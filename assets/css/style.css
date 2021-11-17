@@ -191,6 +191,10 @@ strong{
 }
 
 /* phần này đang demo swiper */
+.product .container1,
+.review .container1{
+    padding:0 10px;
+}
 .container1 .box{
     text-align: center;
     align-items: center;
@@ -201,12 +205,13 @@ strong{
     text-align: center;
     box-shadow: var(--box-shadow);
     margin: 10px 0;
+    transition: all .2s linear;
 }
 
 .container1 .box img{
     padding: 10px 0;
     margin: 0 auto;
-    height: 180px
+    height: 180px;
 }
 .container1 .box h2{
     padding-top: 10px;
@@ -240,6 +245,7 @@ strong{
     box-shadow: var(--box-shadow);
 }
 .container .box:hover,
+.container1 .swiper-wrapper .box:hover,
 .categories__container .box:hover{
     outline: var(--outline-hover);
     outline-offset: 0rem;
@@ -267,7 +273,7 @@ strong{
     background-color: rgba(255, 255, 255, 0);
 }
 /* product */
-.product .container .box p{
+.product .container1 .box p{
     font-size: 20px;
     line-height: 24px;
     padding: 10px 0;
